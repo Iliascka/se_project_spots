@@ -1,21 +1,60 @@
 # Project 3: Spots
 
-### Overview  
+This project is part of the TripleTen Software Engineering program.
+It includes a responsive profile page layout built with semantic HTML and CSS using the BEM methodology and file stucture.
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+## Project Structure
+
+The webpage consists of two main sections:
+
+**Profile**
+
+- Displays the avatar, username, description, and action buttons.
+
+- Fully responsive across desktop, tablet, and mobile.
+
+- Text elements are truncated according to the project requirements.
+
+**Cards**
+
+- A grid of image cards that resize and reorganize depending on the screen width.
+
+- Text below each card is truncated to one line.
+
+## Responsive Design
+
+- The layout adapts at the following breakpoints:
+
+- Desktop: 1440px design (max-width: 1280px container)
+
+- Tablet: max-width 1320px
+
+- Tablet small: max-width 896px
+
+- Mobile: max-width 627px
+
+## Project features
+
+Semantic HTML5
+
+- CSS Flexbox and Grid
+- Responsive media queries
+- BEM file structure
+- Interactive hover states
+
+## Plan on improving the project
+
+- Add JavaScript to make sections dynamic
+- Add a dark mode option
+
+## Figma
+
+- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+
+## GitHub Page
+
+https://iliascka.github.io/se_project_spots/
+
+## Project Video
+
+https://drive.google.com/file/d/1W_42vqDfFekpUI6hqDt3mFzdFC0c-wYd/view?usp=drive_link

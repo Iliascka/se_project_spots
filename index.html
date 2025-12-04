@@ -6,18 +6,108 @@
     <meta name="description" content="Share posts Website" />
     <meta name="author" content="Ilias Katsantonis" />
     <meta name="keywords" content="Share,posts,blog,online,images" />
-    <title>Drops</title>
+    <title>Spots</title>
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="page">
-      <header class="header">Hello</header>
+      <header class="header">
+        <img src="./images/logo.svg" alt="Spots Logo" class="header___logo" />
+      </header>
       <main class="content">
-        <section class="profile"></section>
-        <section class="cards"></section>
+        <section class="profile page__section">
+          <img
+            class="profile__avatar"
+            src="./images/avatar.jpg"
+            alt="Profile Avatar"
+          />
+          <div class="profile__content">
+            <h1 class="profile__name">Bessie Coleman</h1>
+            <p class="profile__description">Civil Aviator</p>
+            <button class="profile__btn-edit" type="button">
+              <img src="./images/pencil.svg" alt="pencil-icon" />
+              Edit Profile
+            </button>
+          </div>
+          <button class="profile__btn-plus">
+            <img src="./images/plus-icon.svg" alt="plus-icon" /> New Post
+          </button>
+        </section>
+        <section class="cards page__section">
+          <ul class="cards__list">
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="val-thorens"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Val Thorens</h2>
+                <button type="button" class="card__like-btn"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/2-photo-by-ceiline-from-pexels.jpg"
+                alt="val-thorens"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Restaurant terrace</h2>
+                <button type="button" class="card__like-btn"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
+                alt="val-thorens"
+              />
+              <div class="card__content">
+                <h2 class="card__title">An outdoor cafe</h2>
+                <button type="button" class="card__like-btn"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
+                alt="val-thorens"
+              />
+              <div class="card__content">
+                <h2 class="card__title">A very long bridge, over the forest</h2>
+                <button type="button" class="card__like-btn"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
+                alt="val-thorens"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Tunnel with morning light</h2>
+                <button type="button" class="card__like-btn"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img
+                class="card__image"
+                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
+                alt="val-thorens"
+              />
+              <div class="card__content">
+                <h2 class="card__title">Mountain house</h2>
+                <button type="button" class="card__like-btn"></button>
+              </div>
+            </li>
+          </ul>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <p class="footer__signature">2023 &copy; Spots</p>
+      </footer>
     </div>
   </body>
 </html>
