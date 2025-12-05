@@ -1,5 +1,5 @@
 .cards {
-  padding: 20px 0 0;
+  padding: 20px 0 40px;
   border-bottom: 1px solid rgba(33, 33, 33, 0.4);
 }
 
@@ -11,20 +11,6 @@
   margin: 0;
   padding: 0;
   grid-gap: 40px 20px;
-}
-
-/* Tablet */
-@media screen and (max-width: 1320px) {
-  .cards__list {
-    grid-template-columns: repeat(2, 413px);
-  }
-}
-
-/* Tablet small */
-@media screen and (max-width: 884px) {
-  .cards__list {
-    grid-template-columns: repeat(1, 413px);
-  }
 }
 
 /* Mobile */

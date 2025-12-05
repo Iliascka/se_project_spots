@@ -27,9 +27,7 @@ The webpage consists of two main sections:
 
 - Desktop: 1440px design (max-width: 1280px container)
 
-- Tablet: max-width 1320px
-
-- Tablet small: max-width 896px
+- Tablet: max-width 1280px
 
 - Mobile: max-width 627px
 
