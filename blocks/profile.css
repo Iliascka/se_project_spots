@@ -85,7 +85,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -125,8 +125,6 @@
   }
 
   .profile__content {
-    display: flex;
-    flex-direction: column;
     margin: 0 0 20px;
   }
 
@@ -137,11 +135,6 @@
 
   .profile__description {
     margin: 0 0 32px;
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
   }
 
   .profile__btn-edit {

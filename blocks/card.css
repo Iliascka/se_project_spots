@@ -24,6 +24,7 @@
   transition: opacity 0.7s ease-in-out;
   cursor: pointer;
 }
+
 .card__like-btn:hover {
   background-image: url(../images/like-icon-hover.svg);
   opacity: 100%;
@@ -48,11 +49,5 @@
   .card__image {
     width: 288px;
     height: 288px;
-  }
-
-  .card__title {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
   }
 }
