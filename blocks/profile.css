@@ -59,9 +59,9 @@
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 1;
   letter-spacing: 0;
-  opacity: 70%;
+  opacity: 0.7;
   transition: opacity 0.3s ease-in-out;
   color: rgba(33, 33, 33, 1);
   width: max-content;
@@ -69,7 +69,7 @@
 }
 
 .profile__btn-edit:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .profile__btn-plus {
