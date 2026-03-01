@@ -42,7 +42,6 @@ Semantic HTML5
 
 ## Plan on improving the project
 
-- Add JavaScript to make sections dynamic
 - Add a dark mode option
 
 ## Figma
@@ -56,3 +55,7 @@ https://iliascka.github.io/se_project_spots/
 ## Project Video
 
 https://drive.google.com/file/d/1W_42vqDfFekpUI6hqDt3mFzdFC0c-wYd/view?usp=drive_link
+
+## Project Video 2
+
+https://www.loom.com/share/b2106e687ba4430e9a61d744241e3e8f

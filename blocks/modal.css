@@ -101,7 +101,7 @@
 }
 
 .modal__label {
-  margin-bottom: 8px;
+  margin-bottom: 32px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -134,7 +134,11 @@
   border: none;
 }
 
-.modal__submit-btn:hover {
+.modal__submit-btn-inactive {
+  background-color: rgba(33, 33, 33, 0.5);
+}
+
+.modal__submit-btn:hover:not.modal__submit-bnt-inactive {
   opacity: 0.9;
 }
 
@@ -167,6 +171,19 @@
   right: -52.5px;
   position: absolute;
   background-image: url(../images/close-button.svg);
+}
+
+.modal__error {
+  display: block;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 0, 0, 0.7);
+  margin: 8px 0 0;
+}
+
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 616px) {
