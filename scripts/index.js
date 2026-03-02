@@ -37,6 +37,8 @@ const profileNameInput = editProfileModal.querySelector("#profile-name-input");
 const profileJobElement = document.querySelector(".profile__description");
 const jobInput = editProfileModal.querySelector("#profile-description-input");
 const profileFormElement = editProfileModal.querySelector(".modal__form");
+const modalSubmitProfileBtn =
+  editProfileModal.querySelector(".modal__submit-btn");
 
 const newProfilePostBtn = document.querySelector(".profile__btn-plus");
 const newPostModal = document.querySelector("#new-post-modal");
@@ -52,6 +54,8 @@ const previewModal = document.querySelector("#preview-modal");
 const previewCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewImageModal = previewModal.querySelector(".modal__image");
 const previewCaptionModal = previewModal.querySelector(".modal__caption");
+
+const modals = document.querySelectorAll(".modal");
 
 const cardTemplate = document
   .querySelector("#card-template")
@@ -92,10 +96,12 @@ previewCloseBtn.addEventListener("click", () => {
   closeModal(previewModal);
 });
 
-previewModal.addEventListener("click", (evt) => {
-  if (evt.target === previewModal) {
-    closeModal(previewModal);
-  }
+modals.forEach((modal) => {
+  modal.addEventListener("click", (evt) => {
+    if (evt.target === modal) {
+      closeModal(modal);
+    }
+  });
 });
 
 function handleEscape(evt) {
@@ -121,6 +127,12 @@ editProfileBtn.addEventListener("click", function () {
   profileNameInput.value = profileNameElement.textContent;
   jobInput.value = profileJobElement.textContent;
   resetValidation(profileFormElement, [profileNameInput, jobInput], settings);
+  toggleButtonState(
+    [profileNameInput, jobInput],
+    modalSubmitProfileBtn,
+    settings,
+  );
+  disableBtn(modalSubmitProfileBtn, settings);
   openModal(editProfileModal);
 });
 
@@ -161,7 +173,7 @@ function handleAddCardSubmit(evt) {
   cardsList.prepend(cardElement);
   closeModal(newPostModal);
   addCardFormElement.reset();
-  disableBtn(modalSubmitBtn);
+  disableBtn(modalSubmitBtn, settings);
 }
 
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);

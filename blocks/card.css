@@ -12,8 +12,7 @@
   cursor: pointer;
   transition:
     opacity 0.2s ease,
-    box-shadow,
-    0.2s ease;
+    box-shadow 0.2s ease;
 }
 
 .card__image:hover {

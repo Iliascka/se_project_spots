@@ -138,7 +138,7 @@
   background-color: rgba(33, 33, 33, 0.5);
 }
 
-.modal__submit-btn:hover:not.modal__submit-bnt-inactive {
+.modal__submit-btn:hover:not(.modal__submit-btn-inactive) {
   opacity: 0.9;
 }
 
@@ -174,12 +174,16 @@
 }
 
 .modal__error {
-  display: block;
+  display: none;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: rgba(255, 0, 0, 0.7);
   margin: 8px 0 0;
+}
+
+.modal__error_visible {
+  display: block;
 }
 
 .modal__input_type_error {
