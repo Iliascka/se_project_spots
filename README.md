@@ -1,7 +1,7 @@
-# Project 3: Spots
+# Spots
 
-This project is part of the TripleTen Software Engineering program.
-It includes a responsive profile page layout built with semantic HTML and CSS using the BEM methodology and file stucture.
+This project is a responsive profile page built with semantic HTML and CSS using the BEM methodology and file structure.
+It includes interactive features implemented with JavaScript such as form validation, modal interactions, and dynamic card creation.
 
 ## Project Structure
 
@@ -33,16 +33,27 @@ The webpage consists of two main sections:
 
 ## Project features
 
-Semantic HTML5
-
+- Semantic HTML5
 - CSS Flexbox and Grid
 - Responsive media queries
 - BEM file structure
 - Interactive hover states
+- JavaScript form validation
+- DOM manipulation with event listeners
 
-## Plan on improving the project
+## Project Overview
 
-- Add a dark mode option
+### Desktop View
+
+![Desktop](images//a_desktop.png)
+
+### Tablet View & Modal Open
+
+![Tablet](images//b_tablet.png)
+
+### Mobile View
+
+![Mobile](images//c_mobile.png)
 
 ## Figma
 
@@ -54,8 +65,4 @@ https://iliascka.github.io/se_project_spots/
 
 ## Project Video
 
-https://drive.google.com/file/d/1W_42vqDfFekpUI6hqDt3mFzdFC0c-wYd/view?usp=drive_link
-
-## Project Video 2
-
-https://www.loom.com/share/b2106e687ba4430e9a61d744241e3e8f
+[Project video](https://www.loom.com/share/b2106e687ba4430e9a61d744241e3e8f)
