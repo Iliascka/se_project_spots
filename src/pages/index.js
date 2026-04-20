@@ -1,3 +1,12 @@
+import {
+  enableValidation,
+  settings,
+  resetValidation,
+  toggleButtonState,
+  disableBtn,
+} from "../scripts/validation.js";
+import "./index.css";
+
 const initialCards = [
   {
     name: "Golden Gate Bridge",
@@ -141,6 +150,12 @@ modalCloseBtn.addEventListener("click", function () {
 });
 
 newProfilePostBtn.addEventListener("click", function () {
+  addCardFormElement.reset();
+  resetValidation(
+    addCardFormElement,
+    [profileLinkInput, profileCaptionInput],
+    settings,
+  );
   openModal(newPostModal);
 });
 
@@ -182,3 +197,5 @@ initialCards.forEach(function (item) {
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
+
+enableValidation(settings);
