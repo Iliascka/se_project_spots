@@ -7,31 +7,40 @@
     <meta name="author" content="Ilias Katsantonis" />
     <meta name="keywords" content="Share,posts,blog,online,images" />
     <title>Spots</title>
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="page">
       <header class="header">
-        <img src="./images/logo.svg" alt="Spots Logo" class="header__logo" />
+        <img
+          src="<%= require('./images/logo.svg')%>"
+          alt="Spots Logo"
+          class="header__logo"
+        />
       </header>
       <main class="content">
         <section class="profile page__section">
           <img
             class="profile__avatar"
-            src="./images/alex-avatar.png"
+            src="<%= require('./images/alex-avatar.png') %>"
             alt="Profile avatar"
           />
           <div class="profile__content">
             <h1 class="profile__name">Alex Rivera</h1>
             <p class="profile__description">Content Creator</p>
             <button class="profile__btn-edit" type="button">
-              <img src="./images/pencil.svg" alt="pencil-icon" />
+              <img
+                src="<%= require('./images/pencil.svg') %>"
+                alt="pencil-icon"
+              />
               Edit Profile
             </button>
           </div>
           <button type="button" class="profile__btn-plus">
-            <img src="./images/plus-icon.svg" alt="plus-icon" /> New Post
+            <img
+              src="<%= require('./images/plus-icon.svg') %>"
+              alt="plus-icon"
+            />
+            New Post
           </button>
         </section>
         <section class="cards page__section">
@@ -138,7 +147,5 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/validation.js"></script>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>
