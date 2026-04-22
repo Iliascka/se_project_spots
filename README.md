@@ -61,7 +61,7 @@ The webpage consists of two main sections:
 
 ## GitHub Page
 
-https://iliascka.github.io/se_project_spots/
+https://iliascka.github.io/spots-website/
 
 ## Project Video
 
