@@ -65,4 +65,4 @@ https://iliascka.github.io/se_project_spots/
 
 ## Project Video
 
-[Project video](https://www.loom.com/share/b2106e687ba4430e9a61d744241e3e8f)
+[Project video](https://www.loom.com/share/8043be7f435c44ff98a6c986d33eb045)
