@@ -4,6 +4,13 @@ class Api {
     this._headers = headers;
   }
 
+  _checkResponce(res) {
+    if (res.ok) {
+      return res.json();
+    }
+    return Promise.reject(`Error: ${res.status}`);
+  }
+
   getAppInfo() {
     return Promise.all([this.getInitialCards(), this.getUserInfo()]);
   }
@@ -12,10 +19,7 @@ class Api {
     return fetch(`${this._baseUrl}/cards`, {
       headers: this._headers,
     }).then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this._checkResponce(res);
     });
   }
 
@@ -28,10 +32,7 @@ class Api {
         link,
       }),
     }).then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this._checkResponce(res);
     });
   }
 
@@ -39,10 +40,7 @@ class Api {
     return fetch(`${this._baseUrl}/users/me`, {
       headers: this._headers,
     }).then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this._checkResponce(res);
     });
   }
 
@@ -55,10 +53,7 @@ class Api {
         about,
       }),
     }).then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this._checkResponce(res);
     });
   }
 
@@ -67,10 +62,7 @@ class Api {
       method: "Delete",
       headers: this._headers,
     }).then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this._checkResponce(res);
     });
   }
 
@@ -82,10 +74,7 @@ class Api {
         avatar,
       }),
     }).then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this._checkResponce(res);
     });
   }
 
@@ -94,10 +83,7 @@ class Api {
       method: isLiked ? "DELETE" : "PUT",
       headers: this._headers,
     }).then((res) => {
-      if (res.ok) {
-        return res.json();
-      }
-      return Promise.reject(`Error: ${res.status}`);
+      return this._checkResponce(res);
     });
   }
 }

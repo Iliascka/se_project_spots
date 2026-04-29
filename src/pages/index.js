@@ -114,15 +114,14 @@ function handleAvatarSubmit(evt) {
   api
     .editAvatarInfo({ avatar: profileAvatarInput.value })
     .then((data) => {
-      setTimeout(() => {
-        submitBtn(avatarSubmitBtn, false);
-        profileAvatar.src = data.avatar;
-        closeModal(avatarModal);
-        avatarForm.reset();
-      }, 1000);
+      profileAvatar.src = data.avatar;
+      closeModal(avatarModal);
+      avatarForm.reset();
     })
     .catch((err) => {
       console.error(err);
+    })
+    .finally(() => {
       submitBtn(avatarSubmitBtn, false);
     });
 }
@@ -139,13 +138,18 @@ function handleDeleteCard(cardElement, data) {
 
 function handleDeleteSubmit(evt) {
   evt.preventDefault();
+  submitBtn(deleteModalBtn, true, "Delete", "Deleting...");
+
   api
     .deleteCard(selectedCardId)
     .then((data) => {
       closeModal(deleteModal);
       selectedCard.remove();
     })
-    .catch(console.error);
+    .catch(console.error)
+    .finally(() => {
+      submitBtn(deleteModalBtn, false, "Delete", "Deleting...");
+    });
 }
 
 const cardTemplate = document
@@ -255,15 +259,12 @@ function handleProfileFormSubmit(evt) {
   api
     .editUserInfo({ name: profileNameInput.value, about: jobInput.value })
     .then((data) => {
-      setTimeout(() => {
-        submitBtn(modalSubmitProfileBtn, false);
-        profileNameElement.textContent = data.name;
-        profileJobElement.textContent = data.about;
-        closeModal(editProfileModal);
-      }, 1000);
+      profileNameElement.textContent = data.name;
+      profileJobElement.textContent = data.about;
+      closeModal(editProfileModal);
     })
-    .catch((err) => {
-      console.error(err);
+    .catch(console.error)
+    .finally(() => {
       submitBtn(modalSubmitProfileBtn, false);
     });
 }
@@ -276,16 +277,16 @@ function handleAddCardSubmit(evt) {
   api
     .addCards({ name: profileCaptionInput.value, link: profileLinkInput.value })
     .then((data) => {
-      setTimeout(() => {
-        submitBtn(modalSubmitBtn, false);
-        const cardElement = getCardElement(data);
-        cardsList.prepend(cardElement);
-        closeModal(newPostModal);
-        addCardFormElement.reset();
-        disableBtn(modalSubmitBtn, settings);
-      }, 1000);
+      const cardElement = getCardElement(data);
+      cardsList.prepend(cardElement);
+      closeModal(newPostModal);
+      addCardFormElement.reset();
+      disableBtn(modalSubmitBtn, settings);
     })
-    .catch(console.error);
+    .catch(console.error)
+    .finally(() => {
+      submitBtn(modalSubmitBtn, false);
+    });
 }
 
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
