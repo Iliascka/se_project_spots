@@ -47,15 +47,20 @@ The webpage consists of two main sections:
 
 ### Desktop View
 
-![Desktop](images//a_desktop.png)
+![Desktop](https://github.com/user-attachments/assets/04b76d9c-ab22-44d9-81c2-59b04c749f2e)
 
 ### Tablet View & Modal Open
 
-![Tablet](images//b_tablet.png)
+![Tablet](https://github.com/user-attachments/assets/e0796542-4835-4589-bf00-863fc9b6c104)
+
 
 ### Mobile View
 
-![Mobile](images//c_mobile.png)
+![Mobile](https://github.com/user-attachments/assets/389b2a92-9ff4-488d-ab06-3798fca4b42f)
+
+
+
+
 
 ## Figma
 
