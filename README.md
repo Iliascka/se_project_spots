@@ -38,6 +38,8 @@ The webpage consists of two main sections:
 - Responsive media queries
 - BEM file structure
 - Interactive hover states
+- Fetch API for dynamic data loading and server communication
+- Webpack bundling and modular project structure
 - JavaScript form validation
 - DOM manipulation with event listeners
 
